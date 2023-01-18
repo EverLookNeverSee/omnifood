@@ -54,12 +54,13 @@ body {
     color: #555555;
 }
 
-.test {
-    /*max-width: 1000px;*/
-    max-width: 50rem;
-    /* 1 rem = 10 px    --> 50 rem = 500 px */
-    background-color: red;
-    color: #ffffff;
-    font-size: 2rem;
-    padding: 4rem;
+.hero {
+    max-width: 130rem;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.hero-img {
+    width: 100%;
 }
