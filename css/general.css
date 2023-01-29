@@ -28,7 +28,7 @@
 
 - Primary: #e67e22
 - Tints:    #fdf2e9, #fae5d3, #eb984e
-- Shades:   #cf711f
+- Shades:   #cf711f, #45260a
 - Accent:
 - Greys: #555555, #333333, #6f6f6f(lightest grey allowed on #fdf2e9)
 ////////////////////////////////////////////////////////////////////////////////////
@@ -139,12 +139,19 @@ body {
     letter-spacing: 1px;
 }
 
+.btn,
 .btn:link,
 .btn:visited {
     font-size: 2rem;
     font-weight: 600;
     display: inline-block;
     padding: 1.6rem 3.2rem;
+
+    /*Only necessary for .btn*/
+    border: none;
+    cursor: pointer;
+    font-family: inherit;
+
     border-radius: 9px;
     text-decoration: none;
     /* Put the transition on original state */
@@ -177,6 +184,18 @@ body {
     /*border: 3px solid #fff;*/
     /* Trick to add border inside */
     box-shadow: inset 0 0 0 1px #555555;
+}
+
+.btn--form {
+    background-color: #45260a;
+    color: #fdf2e9;
+    align-self: end;
+    padding: 1.2rem;
+}
+
+.btn--form:hover {
+    background-color: #ffffff;
+    color: #555555;
 }
 
 .link:link,
@@ -218,6 +237,11 @@ body {
 /*****************************************************/
 /* Helper Classes */
 /*****************************************************/
+
+*:focus {
+    outline: none;
+    box-shadow: 0 0 0 0.4rem rgba(230, 126, 34, 0.5);
+}
 
 .margin-right-sm {
     margin-right: 1.6rem !important;
