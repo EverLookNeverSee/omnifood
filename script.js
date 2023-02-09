@@ -23,13 +23,14 @@ allLinks.forEach(function (link) {
         top: 0,
         behavior: "smooth",
       })
-      // Scroll to other links
-    } else if (href !== "#" && href.startsWith("#")) {
+    }
+    // Scroll to other links
+    if (href !== "#" && href.startsWith("#")) {
       const sectionEl = document.querySelector(href);
       sectionEl.scrollIntoView({behavior:"smooth"});
     }
     // Close mobile navigation:
-    else if (link.classList.contains("main-nav-link")) {
+    if (link.classList.contains("main-nav-link")) {
       headerEl.classList.toggle("nav-open");
     }
   })
