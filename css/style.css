@@ -112,14 +112,24 @@
     align-items: center;
 }
 
+.heading-primary {
+    animation: moveInRight 1s ease-out;
+}
+
 .hero-description {
     font-size: 2rem;
     line-height: 1.6;
     margin-bottom: 4.8rem;
+    animation: graduallyAppearance 1s ease-out;
+}
+
+.hero .btn {
+    animation: graduallyAppearance 1s ease-out;
 }
 
 .hero-img {
     width: 100%;
+    animation: graduallyAppearance 1s ease-out;
 }
 
 .delivered-meals {
@@ -127,6 +137,8 @@
     margin-top: 8rem;
     align-items: center;
     gap: 1.6rem;
+    animation: graduallyAppearance 1s ease-out
+;
 }
 
 .delivered-imgs {
